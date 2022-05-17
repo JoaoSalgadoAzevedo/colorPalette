@@ -87,10 +87,8 @@ class PaletteBox extends Component {
             isCopied={el.isCopied}
             newColor={this.newColor}
             copyColorCode={this.copyColorCode}
+            
             />)}
-            
-            </div>
-            
             {/* <div class="botaoLock">
                 <span>
                     <button>OLACNJADKN</button>
@@ -108,7 +106,10 @@ class PaletteBox extends Component {
                     <button>OLACNJADKN</button>
                 </span>
                 
-            </div> */}
+            </div>  */}
+            </div>
+            
+            
             </div>
          );
     }

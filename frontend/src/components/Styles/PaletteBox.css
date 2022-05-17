@@ -1,0 +1,204 @@
+@import url(//fonts.googleapis.com/css?family=Vibur);
+
+
+/*
+CSS do botao randomize
+*/ 
+/* 
+.btn-7 {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+    }
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-7:hover{
+      color: rgba(251,75,2,1);
+      background: transparent;
+    }
+    .btn-7:hover:before {
+      height: 100%;
+    }
+    .btn-7:hover:after {
+      width: 100%;
+    }
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+    .btn-7 span:hover:after {
+      width: 100%;
+    } */
+
+/*    
+.mainCartas{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 100vw;
+  height: 350px;
+
+} */
+
+.randomize{
+  width: 100vw;
+  height: 350px;
+}
+
+html,body{
+  height:100%;
+  background-color: rgb(43, 42, 42);
+  margin: 0;
+  
+}
+
+.boss{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  
+}
+
+.logo {
+  /* text-align: initial; */
+  width: 100%;
+  height: 50%;
+  margin: auto;
+  position: relative;
+  top: 100px;
+  left: 90px;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+  align-content: flex-start;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.logo b{
+  font: 200 9vh "Vibur";
+  color: #fee;
+  text-shadow: 0 -40px 100px, 
+                0 0 2px, 
+                0 0 1em #ff4444, 
+                0 0 0.5em #ff4444, 
+                0 0 0.1em #ff4444, 
+                0 10px 3px #000;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #333;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+
+.PaletteBox {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+    /* justify-content: space-between;  */
+  width:  80vw;
+  height: 250px;
+  /* margin: 3em 20px; */
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 0%;
+  /* margin-right: 100%;  */
+  overflow: hidden;
+  border-radius: 0px;
+  
+}
+
+@media (max-width: 768px) {
+  .PaletteBox {
+      flex-flow: column nowrap;
+      width: 310px;
+      height: 400px;
+  }
+}
